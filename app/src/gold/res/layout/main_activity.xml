@@ -16,8 +16,8 @@
         android:id="@+id/fragment_vert2"
         android:name="com.example.ppolab.DKFragment"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="40dp"
         android:layout_weight="1"
-        tools:layout="@layout/button228" />
+        tools:layout="@layout/main_buttons" />
 
 </LinearLayout>

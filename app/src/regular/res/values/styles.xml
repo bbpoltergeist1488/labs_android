@@ -8,9 +8,9 @@
 
     </style>
     <style name="ButtonStyle">
-        <item name="android:layout_width">75dp</item>
-        <item name="android:layout_height">75dp</item>
-        <item name="android:textSize">50dp</item>
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:textSize">45dp</item>
     </style>
 
 </resources>
