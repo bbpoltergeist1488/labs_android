@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+    <TextView android:text=" "
+        android:id="@+id/textview1"
+
+
+        android:textIsSelectable="true"
+        android:layout_height="90dp"
+        android:layout_width="150dp" />
+
+    <Spinner android:text="copy1"
+        android:id="@+id/main_spin"
+        android:layout_height="75dp"
+        android:layout_width="100dp"
+        android:layout_gravity="center"
+
+
+        />
+
+    <TextView android:text=" "
+        android:id="@+id/textview2"
+        android:textIsSelectable="true"
+        android:layout_height="90dp"
+        android:layout_width="150dp"
+
+
+        />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+    <Spinner android:text="copy1"
+        android:id="@+id/spinner1"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+
+        />
+
+
+
+
+    <Spinner android:text="copy1"
+        android:id="@+id/spinner2"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+
+        />
+    </LinearLayout>
+    <Button android:text="swap"
+        android:id="@+id/buttonswap"
+android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content" />
+</LinearLayout>
