@@ -8,7 +8,6 @@ import android.os.Bundle;
 import android.app.FragmentTransaction;
 
 public class MainActivity extends AppCompatActivity {
-    DKFragment DKFragment = new DKFragment();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

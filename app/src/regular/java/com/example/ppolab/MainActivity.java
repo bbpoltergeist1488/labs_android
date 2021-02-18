@@ -5,7 +5,6 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
-    DKFragment DKFragment = new DKFragment();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
