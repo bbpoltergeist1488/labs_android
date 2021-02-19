@@ -1,18 +1,39 @@
 package com.example.ppolab;
 
+import android.content.ClipData;
+import android.content.ClipboardManager;
+import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
-
+import android.widget.Spinner;
+import android.widget.TextView;
+import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.FragmentActivity;
+import androidx.lifecycle.LifecycleOwner;
 import androidx.fragment.app.Fragment;
 
 
 public class DKFragment extends Fragment {
 
+    public void copy1() {
+        ClipboardManager clipboard = (ClipboardManager) getActivity().getSystemService(Context.CLIPBOARD_SERVICE);
+        ClipData clip = ClipData.newPlainText(getString(R.string.randomm), InputModel.getSelectedDataInput().getValue());
+        clipboard.setPrimaryClip(clip);
 
+    }
+    public void copy2() {
+        ClipboardManager clipboard = (ClipboardManager) getActivity().getSystemService(Context.CLIPBOARD_SERVICE);
+        ClipData clip = ClipData.newPlainText(getString(R.string.randomm), InputModel.getSelectedDataOutput().getValue());
+        clipboard.setPrimaryClip(clip);
+
+    }
     private void clear_text () {
         InputModel.selectDataInput("0");
         InputModel.selectDataOutput("0");
@@ -46,8 +67,12 @@ public class DKFragment extends Fragment {
         }
         InputModel.selectDataInput(value);
     }
-    Button b0, b1, b2, b3, b4, b5, b6, b7, b8, b9, bd, bc,bdel,bconv;
+ 
+    Button b0, b1, b2, b3, b4, b5, b6, b7, b8, b9, bd, bc,bdel,bcopy1,bcopy2,bconv;
     DataViewModel InputModel;
+    
+
+
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
@@ -57,7 +82,8 @@ public class DKFragment extends Fragment {
         InputModel = ViewModelProviders.of(requireActivity()).get(DataViewModel.class);
 
 
-
+        bcopy1 =(Button) v.findViewById(R.id.copy1);
+        bcopy2 =(Button) v.findViewById(R.id.copy2);
         b0 = (Button) v.findViewById(R.id.button0);
         b1 = (Button) v.findViewById(R.id.button1);
         b2 = (Button) v.findViewById(R.id.button2);
@@ -73,7 +99,18 @@ public class DKFragment extends Fragment {
         bdel = (Button) v.findViewById(R.id.delete);
         bconv =(Button) v.findViewById(R.id.convert);
 
-
+        View.OnClickListener btcopy1 = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                copy1();
+            }
+        };
+        View.OnClickListener btcopy2 = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                copy2();
+            }
+        };
         View.OnClickListener btdel = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -160,8 +197,17 @@ public class DKFragment extends Fragment {
             }
         };
 
-
-
+        if (!BuildConfig.IS_DEMO) {
+            bcopy1.setOnClickListener(btcopy1);
+            bcopy2.setOnClickListener(btcopy2);
+            bcopy1.setVisibility(View.VISIBLE);
+            bcopy2.setVisibility(View.VISIBLE);
+        }
+        else
+        {
+            bcopy1.setVisibility(View.INVISIBLE);
+            bcopy2.setVisibility(View.INVISIBLE);
+        }
         bc.setOnClickListener( btc);
         bd.setOnClickListener( btd);
         b0.setOnClickListener(bt0);

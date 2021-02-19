@@ -28,10 +28,14 @@ android {
     flavorDimensions"default"
     productFlavors{
         regular{
-
+            buildConfigField 'boolean', 'IS_DEMO', 'true'
+            dimension 'default'
+            versionName getVersionName() + "-regular"
         }
         gold{
-
+            buildConfigField 'boolean', 'IS_DEMO', 'false'
+            dimension 'default'
+            versionName getVersionName() + "-gold"
         }
     }
 }

@@ -148,12 +148,16 @@ public class DataFragment extends Fragment {
             public void onNothingSelected(AdapterView<?> parent) {
             }
         };
+        if (!BuildConfig.IS_DEMO) {
         bswap.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 InputModel.swap_func();
             }
+
         });
+            bswap.setVisibility(View.VISIBLE);}
+        else {bswap.setVisibility(View.INVISIBLE);}
         spinner1.setOnItemSelectedListener(Data_from);
         spinner2.setOnItemSelectedListener(Data_to);
         Spinner_category.setOnItemSelectedListener(Data_main);
