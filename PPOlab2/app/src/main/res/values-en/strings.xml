@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PPOlab2</string>
+    <string name="clear">clear</string>
+    <string name="warm_up_time">Warmup time</string>
+    <string name="minus">-</string>
+    <string name="plus">+</string>
+    <string name="training_time">Training time</string>
+    <string name="color">Color</string>
+    <string name="timer_name">Timer name</string>
+    <string name="repeatings">Amount of sets</string>
+    <string name="amount_of_cycles">Amount of approaches</string>
+    <string name="rest_after_cycle">Rest between sets</string>
+    <string name="resting_time">Resting time</string>
+    <string name="prev">Prev.</string>
+    <string name="pause">Pause</string>
+    <string name="unpause">Continue</string>
+    <string name="next">Next.</string>
+    <string name="start">Start</string>
+    <string name="training_ended">Training ended</string>font_size_types
+    <string name="choose_font_size">Font</string>
+    <string name="font_size_types">Choose font size</string>
+    <string name="darktheme">Dark theme</string>
+    <string name="choose_language">Choose language</string>
+    <string name="delete_data">Delete data</string>
+    <string name="delete_all_user_data"> Delete user data</string>
+    <string name="Settings">Settings</string>
+    <string name="add_timer">Create timer</string>
+
+</resources>
