@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">PPOlab2</string>
+    <string name="clear">clear</string>
+    <string name="warm_up_time">Время разминки</string>
+    <string name="minus">-</string>
+    <string name="plus">+</string>
+    <string name="training_time">Время тренировок</string>
+    <string name="color">Цвет</string>
+    <string name="timer_name">Название таймера</string>
+    <string name="repeatings">Кол-во повторений</string>
+    <string name="amount_of_cycles">Кол-во подходов</string>
+    <string name="rest_after_cycle">Время передышки</string>
+    <string name="resting_time">Время отдыха</string>
+    <string name="prev">Пред.</string>
+    <string name="pause">Пауза</string>
+    <string name="unpause">Продолжить</string>
+    <string name="next">След.</string>
+    <string name="start">Начать</string>
+    <string name="training_ended">Тренировка закончилась</string>font_size_types
+    <string name="choose_font_size">Шрифт</string>
+    <string name="font_size_types">Выберите размер шрифта</string>
+    <string name="darktheme">Тёмная тема</string>
+    <string name="choose_language">Выбрать язык</string>
+    <string name="delete_data">Стереть данные</string>
+    <string name="delete_all_user_data"> Удалить пользовательские данные</string>
+    <string name="Settings">Настройки</string>
+    <string name="add_timer">Добавить таймер</string>
+
+    <string name="font_preference" translatable="false">Размер шрифта</string>
+    <string name="darktheme_preference" translatable="false">Тёмная тема</string>
+    <string name="language_preference" translatable="false">Язык</string>
+    <string name="delete_data_preference" translatable="false">Удалить данные</string>
+
+
+</resources>
