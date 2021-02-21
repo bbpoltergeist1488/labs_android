@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" >Таймер</string>
+    <string name="prepare">Подготовка</string>
+    <string name="work">Тренировка</string>
+    <string name="rest">Перерыв</string>
+    <string name="cycle">Циклы</string>
+    <string name="sets">Сеты</string>
+    <string name="name">Название</string>
+    <string name="item_color">Цвет задачи</string>
+    <string name="cancel">Отмена</string>
+    <string name="confirm">Сохранить</string>
+    <string name="format_seconds">%d сек</string>
+    <string name="action_settings">Настройки</string>
+    <string name="font_sum">размер шрифтв интерфейса приложения</string>
+    <string name="font_title">Размер шрифта</string>
+    <string name="night_sum">включить темную тему в приложении</string>
+    <string name="night_title">Темная тема</string>
+    <string name="lang_sum">язык интерфейса приложения</string>
+    <string name="lang_title">Язык</string>
+    <string name="reset_sum">сброс всех данных приложения, включая настройки</string>
+    <string name="reset_title">Сброс</string>
+    <string-array name="font_sizes">
+        <item>маленький</item>
+        <item>средний</item>
+        <item>большой</item>
+    </string-array>
+    <string-array name="font_sizes_values">
+        <item>0.75</item>
+        <item>1</item>
+        <item>1.5</item>
+    </string-array>
+
+    <string-array name="languages">
+        <item>русский</item>
+        <item>english</item>
+    </string-array>
+
+    <string-array name="languages_values">
+        <item>rus</item>
+        <item>eng</item>
+    </string-array>
+</resources>
