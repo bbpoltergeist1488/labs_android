@@ -26,10 +26,14 @@ public class DataFragment extends Fragment {
     String[] typeLength ={"Метр","Футы","Дюймы"};
     String[] typeTime ={"Секунда","Минута","Час"};
     String[] typeMass ={"Килограмм","Тонна","Фунт"};
+    Button bswap;
+
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
         final View v = inflater.inflate(R.layout.input, container, false);
+        if (v.findViewById(R.id.buttonswap) != null)
+        bswap =(Button) v.findViewById(R.id.buttonswap);
         DataInput = (TextView)v.findViewById(R.id.textview1);
         DataOutput= (TextView)v.findViewById(R.id.textview2);
 
@@ -141,6 +145,16 @@ public class DataFragment extends Fragment {
             public void onNothingSelected(AdapterView<?> parent) {
             }
         };
+
+        bswap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                InputModel.swap_func();
+            }
+
+        });
+
+
         spinner1.setOnItemSelectedListener(Data_from);
         spinner2.setOnItemSelectedListener(Data_to);
         Spinner_category.setOnItemSelectedListener(Data_main);

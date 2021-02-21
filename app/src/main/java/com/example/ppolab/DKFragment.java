@@ -74,9 +74,10 @@ public class DKFragment extends Fragment {
 
         InputModel = ViewModelProviders.of(requireActivity()).get(DataViewModel.class);
 
-
-        bcopy1 =(Button) v.findViewById(R.id.copy1);
-        bcopy2 =(Button) v.findViewById(R.id.copy2);
+        if (v.findViewById(R.id.buttonswap) != null){
+            bcopy1 = (Button) v.findViewById(R.id.copy1);
+        bcopy2 = (Button) v.findViewById(R.id.copy2);
+    }
         b0 = (Button) v.findViewById(R.id.button0);
         b1 = (Button) v.findViewById(R.id.button1);
         b2 = (Button) v.findViewById(R.id.button2);
@@ -190,17 +191,10 @@ public class DKFragment extends Fragment {
             }
         };
 
-        if (!BuildConfig.IS_DEMO) {
+        if (v.findViewById(R.id.buttonswap) != null){
             bcopy1.setOnClickListener(btcopy1);
-            bcopy2.setOnClickListener(btcopy2);
-            bcopy1.setVisibility(View.VISIBLE);
-            bcopy2.setVisibility(View.VISIBLE);
-        }
-        else
-        {
-            bcopy1.setVisibility(View.INVISIBLE);
-            bcopy2.setVisibility(View.INVISIBLE);
-        }
+            bcopy2.setOnClickListener(btcopy2);}
+
         bc.setOnClickListener( btc);
         bd.setOnClickListener( btd);
         b0.setOnClickListener(bt0);
