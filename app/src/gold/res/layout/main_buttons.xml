@@ -50,7 +50,11 @@
         android:id="@+id/button9"
         style="@style/ButtonStyle"
         />
-    <TextView />
+    <Button android:text="copy_1"
+        android:id="@+id/copy1"
+
+        android:layout_height="45dp"
+        android:layout_width="90dp" />
     <Button android:text="@string/b"
         android:id="@+id/buttonb"
         style="@style/ButtonStyle"
@@ -65,6 +69,11 @@
         style="@style/ButtonStyle"
         />
 
+    <Button android:text="copy_2"
+        android:id="@+id/copy2"
+        android:layout_height="45dp"
+        android:layout_width="90dp"
+        />
 
 
 

@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">PPOlab</string>
+    <string name="randomm">"temp"</string>
+    <string name="_5">5</string>
+    <string name="_4">4</string>
+    <string name="convert">convert</string>
+    <string name="_3">3</string>
+    <string name="_2">2</string>
+    <string name="_1">1</string>
+    <string name="_6">6</string>
+    <string name="delete">delete</string>
+    <string name="_7">7</string>
+    <string name="_8">8</string>
+    <string name="_9">9</string>
+    <string name="b">B</string>
+    <string name="_0">0</string>
+    <string-array name="Categories">
+        <item>Длина</item>
+        <item>Температура</item>
+        <item>Масса</item>
+    </string-array>
+    <string-array name="length_category">
+        <item>Метр</item>
+        <item>Футы</item>
+        <item>Дюймы</item>
+    </string-array>
+    <string-array name="temperature_category">
+        <item>Цельсий</item>
+        <item>Кельвин</item>
+        <item>Фаренгейт</item>
+    </string-array>
+    <string-array name="mass_category">
+        <item>Килограмм</item>
+        <item>Тонна</item>
+        <item>Фунт</item>
+    </string-array>
+</resources>

@@ -30,19 +30,34 @@ android {
             keyPassword '123456'
         }
     }
-    flavorDimensions"default"
+    flavorDimensions"mode"
     productFlavors{
         regular{
+            flavorDimensions "mode"
+            applicationId "com.example.ppolab.regular"
             buildConfigField 'boolean', 'IS_DEMO', 'true'
-            dimension 'default'
             versionName getVersionName() + "-regular"
         }
         gold{
+            flavorDimensions "mode"
+            applicationId "com.example.ppolab.gold"
             buildConfigField 'boolean', 'IS_DEMO', 'false'
-            dimension 'default'
             versionName getVersionName() + "-gold"
         }
     }
+
+    sourceSets {
+        regular {
+            java.srcDirs('src/regular/java/', 'src/main/java/')
+        }
+        gold {
+            java.srcDirs('src/gold/java', 'src/main/java/')
+        }
+        main {
+            java.srcDirs('src/main/java')
+        }
+    }
+
 }
 
 dependencies {

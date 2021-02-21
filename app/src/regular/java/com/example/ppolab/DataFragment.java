@@ -1,8 +1,5 @@
 package com.example.ppolab;
 
-import android.content.ClipData;
-import android.content.ClipboardManager;
-import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,12 +9,11 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
+
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.FragmentActivity;
-import androidx.lifecycle.LifecycleOwner;
-import androidx.fragment.app.Fragment;
 
 public class DataFragment extends Fragment {
 
@@ -30,13 +26,10 @@ public class DataFragment extends Fragment {
     String[] typeLength ={"Метр","Футы","Дюймы"};
     String[] typeTime ={"Секунда","Минута","Час"};
     String[] typeMass ={"Килограмм","Тонна","Фунт"};
-    Button bswap;
-
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
         final View v = inflater.inflate(R.layout.input, container, false);
-        bswap =(Button) v.findViewById(R.id.buttonswap);
         DataInput = (TextView)v.findViewById(R.id.textview1);
         DataOutput= (TextView)v.findViewById(R.id.textview2);
 
@@ -148,16 +141,6 @@ public class DataFragment extends Fragment {
             public void onNothingSelected(AdapterView<?> parent) {
             }
         };
-        if (!BuildConfig.IS_DEMO) {
-        bswap.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                InputModel.swap_func();
-            }
-
-        });
-            bswap.setVisibility(View.VISIBLE);}
-        else {bswap.setVisibility(View.INVISIBLE);}
         spinner1.setOnItemSelectedListener(Data_from);
         spinner2.setOnItemSelectedListener(Data_to);
         Spinner_category.setOnItemSelectedListener(Data_main);

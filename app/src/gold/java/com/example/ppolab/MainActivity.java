@@ -1,11 +1,8 @@
 package com.example.ppolab;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-
-import android.content.res.Configuration;
 import android.os.Bundle;
-import android.app.FragmentTransaction;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 

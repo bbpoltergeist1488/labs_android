@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.ppolab.MainActivity">
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment_vert"
+        android:name="com.example.ppolab.DataFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        tools:layout="@layout/input" />
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment_vert2"
+        android:name="com.example.ppolab.DKFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        tools:layout="@layout/main_buttons" />
+
+</LinearLayout>
