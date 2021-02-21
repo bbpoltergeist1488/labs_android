@@ -11,11 +11,7 @@ buildscript {
         // in the individual module build.gradle files
     }
 }
-ext {
-    git = org.ajoberstar.grgit.Grgit.open()
-    gitVersionCode = git.tag.list().size()
-    gitVersionName = "${git.describe()}"
-}
+
 allprojects {
     repositories {
         google()
