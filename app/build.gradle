@@ -47,6 +47,7 @@ android {
     sourceSets {
         regular {
             java.srcDirs('src/regular/java/', 'src/main/java/')
+
         }
         gold {
             java.srcDirs('src/gold/java', 'src/main/java/')
