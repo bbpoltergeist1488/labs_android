@@ -35,13 +35,11 @@ android {
         regular{
             flavorDimensions "mode"
             applicationId "com.example.ppolab.regular"
-            buildConfigField 'boolean', 'IS_DEMO', 'true'
             versionName getVersionName() + "-regular"
         }
         gold{
             flavorDimensions "mode"
             applicationId "com.example.ppolab.gold"
-            buildConfigField 'boolean', 'IS_DEMO', 'false'
             versionName getVersionName() + "-gold"
         }
     }
