@@ -46,10 +46,4 @@
         android:orientation="horizontal">
 
     </LinearLayout>
-    <Button android:text="swap"
-        android:id="@+id/buttonswap"
-
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:visibility="invisible"/>
 </LinearLayout>

@@ -119,14 +119,5 @@ public class DataViewModel extends ViewModel {
 
 
     }
-    public void swap_func(){
-        String temp1 = getSelectedDataOutput().getValue();
-        selectDataOutput(getSelectedDataInput().getValue());
-        selectDataInput(temp1);
-        Integer temp2 =getSelectedDataSpin2().getValue();
-        selectDataSpin2(getSelectedDataSpin3().getValue());
-        selectDataSpin3(temp2);
-    }
-
 
 }
