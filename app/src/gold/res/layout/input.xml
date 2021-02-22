@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    >
+
+    <Spinner android:text="copy1"
+        android:id="@+id/main_spin"
+        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <Spinner android:text="copy1"
+            android:id="@+id/spinner1"
+            android:layout_height="wrap_content"
+            android:layout_width="150dp"
+
+            />
+        <Spinner android:text="copy1"
+            android:id="@+id/spinner2"
+            android:layout_height="wrap_content"
+            android:layout_width="150dp"
+
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView android:text=" "
+            android:id="@+id/textview1"
+            android:textIsSelectable="true"
+            android:layout_height="60dp"
+            android:layout_width="150dp" />
+
+        <Button android:text="copy_1"
+            android:id="@+id/copy1"
+            android:layout_height="45dp"
+            android:layout_width="90dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView android:text=" "
+            android:id="@+id/textview2"
+            android:textIsSelectable="true"
+            android:layout_height="60dp"
+            android:layout_width="150dp"
+            />
+
+        <Button android:text="copy_2"
+        android:id="@+id/copy2"
+        android:layout_height="45dp"
+        android:layout_width="90dp"
+        />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+    <Button android:text="swap"
+        android:id="@+id/buttonswap"
+
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content" />
+</LinearLayout>

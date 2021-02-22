@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:columnCount="4">
+
+    <Button android:text="@string/_1"
+        android:id="@+id/button1"
+
+        style="@style/ButtonStyle"
+        />
+    <Button android:text="@string/_2"
+        android:id="@+id/button2"
+        style="@style/ButtonStyle"
+        />
+    <Button android:text="@string/_3"
+        android:id="@+id/button3"
+        style="@style/ButtonStyle"
+        />
+    <Button android:text="@string/convert"
+        android:id="@+id/convert"
+        />
+
+    <Button android:text="@string/_4"
+        android:id="@+id/button4"
+        style="@style/ButtonStyle"
+        />
+    <Button android:text="@string/_5"
+        android:id="@+id/button5"
+        style="@style/ButtonStyle"
+        />
+    <Button android:text="@string/_6"
+        android:id="@+id/button6"
+        style="@style/ButtonStyle"
+        />
+    <Button android:text="@string/delete"
+        android:id="@+id/delete"
+        />
+
+    <Button android:text="@string/_7"
+        android:id="@+id/button7"
+        style="@style/ButtonStyle"
+        />
+    <Button android:text="@string/_8"
+        android:id="@+id/button8"
+        style="@style/ButtonStyle"
+        />
+    <Button android:text="@string/_9"
+        android:id="@+id/button9"
+        style="@style/ButtonStyle"
+        />
+    <TextView />
+    <Button android:text="@string/b"
+        android:id="@+id/buttonb"
+        style="@style/ButtonStyle"
+        />
+    <Button android:text="@string/_0"
+        android:id="@+id/button0"
+        style="@style/ButtonStyle"
+        />
+
+    <Button android:text="."
+        android:id="@+id/buttonc"
+        style="@style/ButtonStyle"
+        />
+
+
+
+
+
+
+</GridLayout>
